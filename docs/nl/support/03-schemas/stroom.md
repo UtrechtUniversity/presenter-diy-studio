@@ -1,0 +1,1 @@
+![Schematisch overzicht van waar elk apparaat moet worden aangesloten](../../media/electricity.png)

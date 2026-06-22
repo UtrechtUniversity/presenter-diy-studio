@@ -1,0 +1,20 @@
+docs_dir: docs/en
+site_name: Presenter DIY Studio
+theme:
+  name: material
+  language: en
+plugins:
+  - search
+  - pdf-export:
+      combined: true
+      combined_output_path: pdf/Presenter-DIY-studio-handleiding-en.pdf
+extra:
+  alternate:
+    - name: Nederlands
+      link: /nl/
+      lang: nl
+    - name: English
+      link: /en/
+      lang: en
+nav:
+  - Home: index.md

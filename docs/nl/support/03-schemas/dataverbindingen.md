@@ -1,0 +1,1 @@
+![Schematisch overzicht van alle dataverbindingen](../../media/data-connections.png)

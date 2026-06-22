@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="8cm"
+   height="8cm"
+   viewBox="0 0 80 80.000001"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="lang-nl.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:clip-to-page="true"
+     showborder="false"
+     inkscape:zoom="0.73139029"
+     inkscape:cx="378.04713"
+     inkscape:cy="265.93189"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="Lang-NL button"
+     style="display:inline">
+    <rect
+       style="display:inline;fill:#ffcd00;fill-opacity:1;stroke-width:0.264583"
+       id="rect6"
+       width="80"
+       height="80"
+       x="0"
+       y="0"
+       rx="8"
+       ry="8"
+       inkscape:label="Rect yellow" />
+    <text
+       xml:space="preserve"
+       style="font-size:17.6389px;line-height:12.6px;font-family:Monospace;-inkscape-font-specification:'Monospace, Normal';text-align:end;letter-spacing:-0.529167px;text-anchor:end;fill:#ff3611;fill-opacity:1;stroke:none;stroke-width:4;stroke-dasharray:none;stroke-opacity:1"
+       x="62.473061"
+       y="52.626282"
+       id="text6"
+       inkscape:label="NL"><tspan
+         sodipodi:role="line"
+         id="tspan6"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:35.2778px;line-height:12.6px;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke-width:4"
+         x="61.943893"
+         y="52.626282">NL</tspan></text>
+  </g>
+</svg>

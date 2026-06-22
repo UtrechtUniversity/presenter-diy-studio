@@ -1,0 +1,1 @@
+![Schematisch overzicht van de bureau-indeling](../../media/desk.png)

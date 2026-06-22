@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="8cm"
+   height="8cm"
+   viewBox="0 0 80 80.000001"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="stop.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:clip-to-page="true"
+     showborder="false"
+     inkscape:zoom="0.73139029"
+     inkscape:cx="378.73076"
+     inkscape:cy="265.24826"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer3" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Stop button"
+     style="display:inline">
+    <rect
+       style="display:inline;fill:#ffcd00;fill-opacity:1;stroke-width:0.264583"
+       id="rect2"
+       width="80"
+       height="80"
+       x="0"
+       y="0"
+       inkscape:label="Rect yellow" />
+    <circle
+       style="display:inline;fill:#000000;fill-opacity:1;stroke-width:4"
+       id="path1"
+       cx="40"
+       cy="40"
+       r="30"
+       inkscape:label="Record circle" />
+    <circle
+       style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:4;stroke-dasharray:none;stroke-opacity:1"
+       id="circle2"
+       cx="40"
+       cy="40"
+       r="23"
+       inkscape:label="Record circle inner" />
+    <rect
+       style="display:none;fill:#00ffff;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3"
+       width="26"
+       height="26"
+       x="11.999998"
+       y="11.999998"
+       rx="8"
+       ry="8"
+       inkscape:label="Stop button outer" />
+    <rect
+       style="display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3.25793;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4"
+       width="25"
+       height="25"
+       x="27.5"
+       y="27.5"
+       rx="3"
+       ry="3"
+       inkscape:label="Stop button inner" />
+  </g>
+</svg>

@@ -1,0 +1,94 @@
+{
+	"UUID": "nl.uu.diy-studio",
+	"SDKVersion": 2,
+	"Author": "Utrecht University",
+	"CodePath": "app.html",
+	"Description": "Plugin to communicate with the DIY Studio App",
+	"Name": "DIY Studio Plugin",
+	"Icon": "assets/record",
+	"URL": "",
+	"Version": "1.0.0",
+	"Software": {
+		"MinimumVersion": "6.5"
+	},
+	"OS": [
+		{
+			"Platform": "windows",
+			"MinimumVersion": "10"
+		}
+	],
+	"Category": "DIY Studio",
+	"CategoryIcon": "assets/record",
+	"Actions": [
+		{
+			"Icon": "assets/record",
+			"Name": "Record-stop toggle",
+			"Controllers": ["Keypad"],
+			"States": [
+				{
+					"Image": "assets/record",
+					"TitleAlignment": "bottom", 
+          			"FontSize": "12"
+				}
+			],
+			"Tooltip": "Start and stop the recording",
+			"UUID": "nl.uu.diy-studio.record"
+		},
+		{
+			"Icon": "assets/pp-rewind",
+			"Name": "Back to first slide",
+			"Controllers": ["Keypad"],
+			"States": [
+				{
+					"Image": "assets/pp-rewind",
+					"TitleAlignment": "bottom",
+					"FontSize": 12
+				}
+			],
+			"Tooltip": "Go back to the first slide of the presentation",
+			"UUID": "nl.uu.diy-studio.pp-rewind"
+		},
+		{
+			"Icon": "assets/pp-prev",
+			"Name": " Previous slide",
+			"Controllers": ["Keypad"],
+			"States": [
+				{
+					"Image": "assets/pp-prev",
+					"TitleAlignment": "bottom", 
+          			"FontSize": "12"
+				}
+			],
+			"Tooltip": "Go back to the previous PowerPoint slide",
+			"UUID": "nl.uu.diy-studio.pp-prev"
+		},
+		{
+			"Icon": "assets/pp-next",
+			"Name": "Next slide",
+			"Controllers": ["Keypad"],
+			"States": [
+				{
+					"Image": "assets/pp-next",
+					"TitleAlignment": "bottom", 
+          			"FontSize": "12"
+				}
+			],
+			"Tooltip": "Advance to the next PowerPoint slide",
+			"UUID": "nl.uu.diy-studio.pp-next"
+		},
+		{
+			"Icon": "assets/lang-en",
+			"Name": "Language toggle",
+			"Controllers": ["Keypad"],
+			"States": [
+				{
+					"Image": "assets/lang-en",
+					"TitleAlignment": "bottom", 
+          			"FontSize": "12"
+				}
+			],
+			"Tooltip": "Switch the language of the app between Dutch and English",
+			"UUID": "nl.uu.diy-studio.lang"
+		}
+	]
+}

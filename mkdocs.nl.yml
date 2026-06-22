@@ -1,0 +1,76 @@
+docs_dir: docs/nl
+site_name: Presenter DIY-studio
+theme:
+  name: material
+  language: nl
+plugins:
+  - search
+  - pdf-export:
+      combined: true
+      combined_output_path: pdf/Presenter-DIY-studio-handleiding-nl.pdf
+extra:
+  alternate:
+    - name: Nederlands
+      link: /
+      lang: nl
+    - name: English
+      link: /en/
+      lang: en
+nav:
+  - Home: index.md
+  - Gebruik:
+    - 1 - Instructies: gebruiker/instructies.md
+    - 2 - Belangrijke info: gebruiker/belangrijke-info.md
+  - Installatie:
+    - 1 - Benodigdheden:
+      - 1.1 | Hardware: installatie/01-benodigdheden/hardware.md
+      - 1.2 | Workstation: installatie/01-benodigdheden/workstation.md
+      - 1.3 | Stroomkabels: installatie/01-benodigdheden/stroomkabels.md
+      - 1.4 | Datakabels: installatie/01-benodigdheden/datakabels.md
+      - 1.5 | Voorzieningen: installatie/01-benodigdheden/voorzieningen.md
+      - 1.6 | Software: installatie/01-benodigdheden/software.md
+    - 2 - Inrichting:
+      - 2.1 | Afmetingen: installatie/02-inrichting/index.md
+      - 2.2 | Stroom en netwerk: installatie/02-inrichting/stroom-en-netwerk.md
+      - 2.3 | Bureau: installatie/02-inrichting/bureau.md
+      - 2.4 | 19-inch rack: installatie/02-inrichting/19-inch-rack.md
+      - 2.5 | Greenscreen: installatie/02-inrichting/greenscreen.md
+      - 2.6 | Wandschakelaar: installatie/02-inrichting/wandschakelaar.md
+      - 2.7 | Licht: installatie/02-inrichting/licht.md
+      - 2.8 | Akoestiek: installatie/02-inrichting/akoestiek.md
+      - 2.9 | Instructieposters: installatie/02-inrichting/instructieposters.md
+    - 3 - Hardwareconfiguratie:
+      - 3.1 | Overzicht: installatie/03-hardware-config/index.md
+      - 3.2 | Power sequencer: installatie/03-hardware-config/power-sequencer.md
+      - 3.3 | Camera: installatie/03-hardware-config/camera.md
+      - 3.4 | Vocal Processor: installatie/03-hardware-config/vocal-processor.md
+      - 3.5 | Ultimatte: installatie/03-hardware-config/ultimatte.md
+      - 3.6 | Beeldschermen: installatie/03-hardware-config/beeldschermen.md
+      - 3.7 | Lampen: installatie/03-hardware-config/lampen.md
+    - 4 - Softwareconfiguratie:
+      - 4.1 | DIY-studio packages: installatie/04-software-config/index.md
+      - 4.2 | Windows - deel 1: installatie/04-software-config/windows-1.md
+      - 4.2 | Python: installatie/04-software-config/python.md
+      - 4.3 | Git: installatie/04-software-config/git.md
+      - 4.4 | DIY Studio App: installatie/04-software-config/diy-studio-app.md
+      - 4.5 | OBS: installatie/04-software-config/obs.md
+      - 4.6 | Stream Deck: installatie/04-software-config/stream-deck.md
+      - 4.7 | PowerPoint: installatie/04-software-config/powerpoint.md
+      - 4.8 | Firefox: installatie/04-software-config/firefox.md
+      - 4.9 | Desktop Video: installatie/04-software-config/bm-desktop-video.md
+      - 4.10 | Ultimatte: installatie/04-software-config/bm-ultimatte.md
+      - 4.11 | Dual Monitor Tools: installatie/04-software-config/dual-monitor-tools.md
+      - 4.12 | Windows - deel 2: installatie/04-software-config/windows-2.md
+  - Support:
+    - 1 - Informatie: 
+      - 1.1 | Apparatuur: support/01-info/apparatuur.md
+      - 1.2 | Belangrijke info: support/01-info/belangrijke-info.md
+    - 2 - Troubleshooting:
+      - 2.1 | Opstartproblemen: support/02-troubleshooting/opstarten.md
+      - 2.2 | DIY Studio App: support/02-troubleshooting/diy-studio-app.md
+      - 2.3 | PowerPoint: support/02-troubleshooting/powerpoint.md
+      - 2.4 | Hardware: support/02-troubleshooting/hardware.md
+    - 3 - Technische tekeningen:
+      - 3.1 | Dataverbindingen: support/03-schemas/dataverbindingen.md
+      - 3.2 | Stroomvoorzieningen: support/03-schemas/stroom.md
+      - 3.3 | Bureau: support/03-schemas/bureau.md

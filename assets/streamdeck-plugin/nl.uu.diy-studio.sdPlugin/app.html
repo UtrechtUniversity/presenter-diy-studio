@@ -1,0 +1,229 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>nl.uu.diy-studio</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <script>
+    	
+    	var ws_streamdeck = null;
+		var ws_python = null;
+    	var pluginUUID = null;
+		var recording = false;
+		var lang = "nl";
+		var context_rec = "";
+		var context_lang = "";
+    	
+    	var DestinationEnum = Object.freeze({"HARDWARE_AND_SOFTWARE":0, "HARDWARE_ONLY":1, "SOFTWARE_ONLY":2})
+    	
+        var timer;
+
+		var pyPort = 4468;
+		var connecting = false;
+
+		connectPythonSocket = function () {
+			connecting = true;
+			console.log("Connecting to Python Websocket...");
+			ws_python = new WebSocket("ws://127.0.0.1:" + pyPort);
+			ws_python.onerror = function(err) {
+				// Wait 5 seconds and try again.
+				console.log("Unable to connect to DIY Studio App. Retrying in 5 seconds.");
+				setTimeout(function() {
+					connectPythonSocket();
+				}, 5000);
+			};
+
+			ws_python.onopen = function() {
+				console.log("Connected to DIY Studio App");
+				connecting = false;
+			};
+
+			ws_python.onclose = function() {
+				console.log("Closed connection to DIY Studio App");
+				// Try to reconnect
+				if (!connecting) {
+					connectPythonSocket();
+				}
+			};
+
+			ws_python.onmessage = function(event) {
+				var msg = event.data;
+
+				// We can receive either record confirmation, stop confirmation, language switch confirmation
+				switch(msg)	{
+					case "rec-confirm":
+						console.log("Received record confirmation");
+						recording = true;
+						var json = {
+							"event": "setImage",
+							"context": context_rec,
+							"payload": {
+								"image": "assets/stop",
+								"target": 1
+							}
+						};
+						ws_streamdeck.send(JSON.stringify(json));
+						break;
+
+					case "stop-confirm":
+						console.log("Received stop confirmation");
+						recording = false;
+						var json = {
+							"event": "setImage",
+							"context": context_rec,
+							"payload": {
+								"image": "assets/record",
+								"target": 1
+							}
+						};
+						ws_streamdeck.send(JSON.stringify(json));
+						break;
+
+					case "lang-nl-confirm":
+						console.log("Received lang-nl confirmation");
+						lang = "nl";
+						var json = {
+							"event": "setImage",
+							"context": context_lang,
+							"payload": {
+								"image": "assets/lang-en",
+								"target": 1
+							}
+						};
+						ws_streamdeck.send(JSON.stringify(json));
+						break;
+
+					case "lang-en-confirm":
+						console.log("Received lang-en confirmation");
+						lang = "en";
+						var json = {
+							"event": "setImage",
+							"context": context_lang,
+							"payload": {
+								"image": "assets/lang-nl",
+								"target": 1
+							}
+						};
+						ws_streamdeck.send(JSON.stringify(json));
+						break;
+				}
+			};
+
+		};
+    	
+        function connectElgatoStreamDeckSocket(inPort, inPluginUUID, inRegisterEvent, inInfo)
+        {
+			
+			pluginUUID = inPluginUUID
+         	
+			// Connect to Stream Deck application
+			ws_streamdeck = new WebSocket("ws://127.0.0.1:" + inPort);
+
+			if(pyPort == inPort) {
+				pyPort += 1;
+			}
+
+			function registerPlugin(inPluginUUID) {
+				var json = {
+					"event": inRegisterEvent,
+					"uuid": inPluginUUID
+				};
+			
+				ws_streamdeck.send(JSON.stringify(json));
+			}
+			
+			ws_streamdeck.onopen = function() {
+				// WebSocket is connected, send message
+				registerPlugin(pluginUUID);
+                console.log("Connected to Stream Deck Software Application");
+			};
+
+			ws_streamdeck.onmessage = function (evt) { 
+				// Received message from Stream Deck
+				var jsonObj = JSON.parse(evt.data);
+				var event = jsonObj['event'];
+				var action = jsonObj['action'];
+				var context = jsonObj['context'];
+				
+				if(event == "keyDown") {
+					var jsonPayload = jsonObj['payload'];
+					var settings = jsonPayload['settings'];
+					var coordinates = jsonPayload['coordinates'];
+					var userDesiredState = jsonPayload['userDesiredState'];
+
+					switch(action) {
+                        case "nl.uu.diy-studio.record":
+							context_rec = context;
+							console.log("Context is " + context);
+
+							if(!recording) {
+								console.log("Sending record message to Python");
+								ws_python.send("record");
+							} else {
+								console.log("Sending stop message to Python");
+								ws_python.send("stop");
+							}
+                            break;
+
+                        case "nl.uu.diy-studio.pp-rewind":
+							console.log("Sending pp-start message to Python");
+							ws_python.send("pp-rewind");
+                            break;
+							
+                        case "nl.uu.diy-studio.pp-prev":
+							console.log("Sending pp-prev message to Python");
+							ws_python.send("pp-prev");
+                            break;
+
+                        case "nl.uu.diy-studio.pp-next":
+							console.log("Sending pp-next message to Python");
+							ws_python.send("pp-next");
+                            break;
+
+                        case "nl.uu.diy-studio.lang":
+							context_lang = context;
+
+							if(lang == "nl") {
+								console.log("Sending lang-en message to Python");
+								ws_python.send("lang-en");
+							} else {
+								console.log("Sending lang-nl message to Python");
+								ws_python.send("lang-nl");
+							}
+                            break;
+                    }
+
+				}
+				else if(event == "keyUp") {
+					// Do nothing?
+				}
+				else if(event == "willAppear") {
+					var jsonPayload = jsonObj['payload'];
+					var settings = jsonPayload['settings'];
+					var coordinates = jsonPayload['coordinates'];
+				}
+                else if(event == "deviceDidDisconnect") {
+
+                }
+                else if(event == "deviceDidConnect")  {
+
+                }
+                else if(event == "applicationDidTerminate")  {
+
+                }
+			};
+
+			ws_streamdeck.onclose = function() { 
+				// Websocket is closed
+				console.log("Closed connection to Stream Deck Software Application");
+			};
+
+			connectPythonSocket();
+        }
+
+    </script>
+</body>
+</html>

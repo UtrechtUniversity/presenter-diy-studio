@@ -1,0 +1,21 @@
+- Power sequencer: Furman CN-3600 SE
+- Wandschakelaar voor power sequencer: Furman RS-1
+- Camera: Blackmagic Micro Studio 4K G2
+- Key light: FalconEyes RX-18TDX III-K1
+- Fill light: FalconEyes RX-18TDX III-K1
+- Green screen lights: 4x Aputure Amaran F21x
+- Vocal processor: dbx 286s
+- Hardware keyer: Blackmagic Ultimatte 12 HD
+- Blackmagic Decklink Studio 4K (in de PC ingebouwd)
+- Bedieningspaneel: Elgato Stream Deck
+- Richtmicrofoon: Sennheiser MKE600
+- Microfoon tafelstandaard: Konig & Meyer 25993
+- Shockmount voor microfoon
+- 2x PC monitoren
+- 1x teleprompter
+- 1x camerastatief
+- Statiefverhoger: Smallrig mini rod 2,5 inch
+- Desktopcomputer aan/uit-schakelaar: COOIDEA
+- PC-speakers: Logitech S150
+- Toetsenbord
+- Muis

@@ -1,0 +1,71 @@
+name: Deploy MkDocs (NL+EN) to GitHub Pages
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      # System deps for WeasyPrint (PDF export)
+      - name: Install system libraries for PDF export
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            libcairo2 \
+            libpango-1.0-0 \
+            libpangocairo-1.0-0 \
+            libgdk-pixbuf2.0-0 \
+            libffi-dev \
+            shared-mime-info
+
+      - name: Install MkDocs + plugins
+        run: pip install mkdocs-material mkdocs-pdf-export-plugin
+
+      - name: Build NL
+        run: mkdocs build -f mkdocs.nl.yml -d site/nl
+
+      - name: Build EN
+        run: mkdocs build -f mkdocs.en.yml -d site/en
+
+      - name: Root redirect to NL
+        run: |
+          cat > site/index.html << 'EOF'
+          <!doctype html>
+          <meta charset="utf-8">
+          <meta http-equiv="refresh" content="0; url=nl/">
+          <link rel="canonical" href="nl/">
+          <title>Redirecting…</title>
+          <a href="nl/">Ga naar Nederlands</a>
+          EOF
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    environment:
+      name: github-pages
+    steps:
+      - uses: actions/deploy-pages@v4
