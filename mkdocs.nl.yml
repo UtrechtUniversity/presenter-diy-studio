@@ -11,10 +11,10 @@ plugins:
 extra:
   alternate:
     - name: Nederlands
-      link: /
+      link: /presenter-diy-studio/nl/
       lang: nl
     - name: English
-      link: /en/
+      link: /presenter-diy-studio/en/
       lang: en
 nav:
   - Home: index.md
