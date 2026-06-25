@@ -3,6 +3,8 @@ site_name: Presenter DIY-studio
 theme:
   name: material
   language: nl
+markdown_extensions:
+  - pymdownx.superfences
 plugins:
   - search
   - pdf-export:
@@ -62,7 +64,7 @@ nav:
       - 4.11 | Dual Monitor Tools: installatie/04-software-config/dual-monitor-tools.md
       - 4.12 | Windows - deel 2: installatie/04-software-config/windows-2.md
   - Support:
-    - 1 - Informatie: 
+    - 1 - Informatie:
       - 1.1 | Apparatuur: support/01-info/apparatuur.md
       - 1.2 | Belangrijke info: support/01-info/belangrijke-info.md
     - 2 - Troubleshooting:

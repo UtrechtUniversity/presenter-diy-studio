@@ -3,6 +3,8 @@ site_name: Presenter DIY Studio
 theme:
   name: material
   language: en
+markdown_extensions:
+  - pymdownx.superfences
 plugins:
   - search
   - pdf-export:
