@@ -1,0 +1,1 @@
+A large portrait-format board displays the A1 instruction poster. A smaller A3 poster is mounted beside the wall switch. The editable source files for these posters are stored in Microsoft Teams (SharePoint).

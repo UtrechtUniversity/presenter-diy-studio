@@ -1,0 +1,2 @@
+- 6× 0.15 m AC plug-to-C14 cable, for connecting equipment to the Furman power sequencer
+- 6× 5 m extension lead, for extending the lights to the 19-inch rack

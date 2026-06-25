@@ -1,0 +1,1 @@
+Set the lights to a colour temperature of 4800 K. An evenly lit background is essential for a good key; verify this using false colour. The green screen should ideally have a brightness of 45–50 IRE, shown as green to light grey.

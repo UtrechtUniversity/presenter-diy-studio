@@ -18,3 +18,59 @@ extra:
       lang: en
 nav:
   - Home: index.md
+  - Use:
+    - 1 - Instructions: user/instructions.md
+    - 2 - Important information: user/important-info.md
+  - Installation:
+    - 1 - Requirements:
+      - 1.1 | Hardware: installation/01-requirements/hardware.md
+      - 1.2 | Workstation: installation/01-requirements/workstation.md
+      - 1.3 | Power cables: installation/01-requirements/power-cables.md
+      - 1.4 | Data cables: installation/01-requirements/data-cables.md
+      - 1.5 | Facilities: installation/01-requirements/facilities.md
+      - 1.6 | Software: installation/01-requirements/software.md
+    - 2 - Room setup:
+      - 2.1 | Dimensions: installation/02-room-setup/index.md
+      - 2.2 | Power and network: installation/02-room-setup/power-and-network.md
+      - 2.3 | Desk: installation/02-room-setup/desk.md
+      - 2.4 | 19-inch rack: installation/02-room-setup/19-inch-rack.md
+      - 2.5 | Green screen: installation/02-room-setup/green-screen.md
+      - 2.6 | Wall switch: installation/02-room-setup/wall-switch.md
+      - 2.7 | Lighting: installation/02-room-setup/lighting.md
+      - 2.8 | Acoustics: installation/02-room-setup/acoustics.md
+      - 2.9 | Instruction posters: installation/02-room-setup/instruction-posters.md
+    - 3 - Hardware configuration:
+      - 3.1 | Overview: installation/03-hardware-configuration/index.md
+      - 3.2 | Power sequencer: installation/03-hardware-configuration/power-sequencer.md
+      - 3.3 | Camera: installation/03-hardware-configuration/camera.md
+      - 3.4 | Vocal processor: installation/03-hardware-configuration/vocal-processor.md
+      - 3.5 | Ultimatte: installation/03-hardware-configuration/ultimatte.md
+      - 3.6 | Displays: installation/03-hardware-configuration/displays.md
+      - 3.7 | Lights: installation/03-hardware-configuration/lights.md
+    - 4 - Software configuration:
+      - 4.1 | DIY Studio packages: installation/04-software-configuration/index.md
+      - 4.2 | Windows - part 1: installation/04-software-configuration/windows-part-1.md
+      - 4.2 | Python: installation/04-software-configuration/python.md
+      - 4.3 | Git: installation/04-software-configuration/git.md
+      - 4.4 | DIY Studio App: installation/04-software-configuration/diy-studio-app.md
+      - 4.5 | OBS: installation/04-software-configuration/obs.md
+      - 4.6 | Stream Deck: installation/04-software-configuration/stream-deck.md
+      - 4.7 | PowerPoint: installation/04-software-configuration/powerpoint.md
+      - 4.8 | Firefox: installation/04-software-configuration/firefox.md
+      - 4.9 | Desktop Video: installation/04-software-configuration/desktop-video.md
+      - 4.10 | Ultimatte: installation/04-software-configuration/ultimatte.md
+      - 4.11 | Dual Monitor Tools: installation/04-software-configuration/dual-monitor-tools.md
+      - 4.12 | Windows - part 2: installation/04-software-configuration/windows-part-2.md
+  - Support:
+    - 1 - Information:
+      - 1.1 | Equipment: support/01-information/equipment.md
+      - 1.2 | Important information: support/01-information/important-information.md
+    - 2 - Troubleshooting:
+      - 2.1 | Start-up problems: support/02-troubleshooting/start-up.md
+      - 2.2 | DIY Studio App: support/02-troubleshooting/diy-studio-app.md
+      - 2.3 | PowerPoint: support/02-troubleshooting/powerpoint.md
+      - 2.4 | Hardware: support/02-troubleshooting/hardware.md
+    - 3 - Technical diagrams:
+      - 3.1 | Data connections: support/03-diagrams/data-connections.md
+      - 3.2 | Power supply: support/03-diagrams/power.md
+      - 3.3 | Desk: support/03-diagrams/desk.md

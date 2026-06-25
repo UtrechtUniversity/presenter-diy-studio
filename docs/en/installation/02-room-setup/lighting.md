@@ -1,0 +1,3 @@
+- The room's fluorescent lights must be switched off. Only the lights by the door remain on.
+- Most of the light in the room comes from the studio lights.
+- Any windows must be blacked out.

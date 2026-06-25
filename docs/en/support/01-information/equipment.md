@@ -1,0 +1,21 @@
+- Power sequencer: Furman CN-3600 SE
+- Wall switch for power sequencer: Furman RS-1
+- Camera: Blackmagic Micro Studio 4K G2
+- Key light: FalconEyes RX-18TDX III-K1
+- Fill light: FalconEyes RX-18TDX III-K1
+- Green screen lights: 4× Aputure Amaran F21x
+- Vocal processor: dbx 286s
+- Hardware keyer: Blackmagic Ultimatte 12 HD
+- Blackmagic DeckLink Studio 4K, installed in the PC
+- Control panel: Elgato Stream Deck
+- Shotgun microphone: Sennheiser MKE600
+- Microphone table stand: König & Meyer 25993
+- Microphone shock mount
+- 2× PC monitors
+- 1× teleprompter
+- 1× camera tripod
+- Tripod riser: SmallRig mini rod, 2.5 inches
+- Desktop computer power switch: COOIDEA
+- PC speakers: Logitech S150
+- Keyboard
+- Mouse

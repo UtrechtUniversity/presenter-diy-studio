@@ -1,6 +1,6 @@
 - Privacy notice:
 
-    * Backups of recordings are usually stored for a minimum of 7 days.
+    * Backups of recordings are generally retained for seven days.
       Backups are encrypted. Other users will not be able to view your
       recordings.
 
@@ -18,11 +18,11 @@
   ID and grant permission to link it to the DIY Studio App. PowerPoint
   presentations can then be opened directly from OneDrive, and recorded
   videos will automatically be uploaded to the root folder of your
-  OneDrive. Yubikeys for Two Factor Authentication (2FA) are not
+  OneDrive. YubiKeys for two-factor authentication (2FA) are not
   currently supported.
 
 - The teleprompter only works with PowerPoint files with the extensions
-  .pptx, .ppt, or .odp.
+  `.pptx`, `.ppt` or `.odp`.
 
 - If the PowerPoint presentation is used solely for reading text, we
   recommend using white text on a black background.
@@ -34,5 +34,5 @@
 
 - USB drives cannot be used; all files must be transferred via OneDrive.
 
-- Tip: Bring a laptop if you need to make any changes to your PowerPoint
+- Tip: bring a laptop if you need to make any changes to your PowerPoint
   files, as this cannot be done on the DIY Studio computer.
