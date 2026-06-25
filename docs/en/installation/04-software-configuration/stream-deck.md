@@ -6,7 +6,7 @@ A custom Stream Deck plugin is included in the DIY Studio Software Package.
 
 - Copy the `nl.uu.diy-studio.sdPlugin` folder to:
 
-  ```text
+  ```
   C:\Users\User\AppData\Roaming\Elgato\StreamDeck\Plugins
   ```
 

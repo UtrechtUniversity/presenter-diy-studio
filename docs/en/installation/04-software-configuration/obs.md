@@ -4,7 +4,7 @@ OBS must always run in **Portable Mode**. This stores all OBS settings, profiles
 
 - Create a taskbar shortcut containing:
 
-  ```text
+  ```
   ../obs64.exe --portable
   ```
 

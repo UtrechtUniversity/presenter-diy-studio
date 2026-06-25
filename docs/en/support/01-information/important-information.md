@@ -27,7 +27,7 @@ The console window may also contain useful diagnostic information. Close the use
 
 To restart the application, first close this console window. Press `Ctrl+Shift+Esc`, select **Run new task** in Task Manager, enter `cmd` and press Enter. Then run:
 
-```bat
+```
 cd C:\Software\Mediaproducties-DIY-Studio-App
 python app.py
 ```
@@ -52,7 +52,7 @@ Use the command-line interface to create key pairs and decrypt files:
 - Press the Windows key, type `cmd` and press Enter.
 - Run:
 
-  ```bat
+  ```
   cd C:\Software\diy-studio-app\
   python encryption.py
   ```

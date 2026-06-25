@@ -14,7 +14,7 @@ The app communicates with the underlying recording software, OBS, and processes 
 
 - Open Command Prompt by pressing the Windows key, typing `cmd` and pressing Enter. Run:
 
-  ```bat
+  ```
   cd C:\Software
   git clone git@github.com:UtrechtUniversity/diy-studio-app.git
   cd diy-studio-app
@@ -23,19 +23,19 @@ The app communicates with the underlying recording software, OBS, and processes 
 
   If the final command does not work, use:
 
-  ```bat
+  ```
   python -m pip install -r requirements.txt
   ```
 
 - Copy this configuration file from the package on the server:
 
-  ```text
+  ```
   Settings\DIY Studio App - USP Bibliotheek\config.cfg
   ```
 
   to:
 
-  ```text
+  ```
   C:\Software\diy-studio-app\config\
   ```
 
@@ -43,7 +43,7 @@ The app communicates with the underlying recording software, OBS, and processes 
 
 - Open Command Prompt as administrator. Press the Windows key, type `cmd`, right-click its icon and select `Run as administrator`. Then run:
 
-  ```bat
+  ```
   cd C:\Users\User\AppData\Local\Programs\Python\Python313\Scripts
   python pywin32_postinstall.py -install
   ```

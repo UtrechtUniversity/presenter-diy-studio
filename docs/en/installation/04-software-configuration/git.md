@@ -5,51 +5,51 @@ Git is a source-control system used to download and update the DIY Studio App. A
 1. Install Git using all default settings.
 2. Open Command Prompt by pressing the Windows key, typing `cmd` and pressing Enter. Run:
 
-   ```bat
+   ```
    git config --global user.name "Arthur Verbeek"
    git config --global user.email arthurverbeek88@gmail.com
    ```
 
 3. Open `Git Bash` and run:
 
-   ```bash
+   ```
    ssh-keygen -t ed25519 -C "arthurverbeek88@gmail.com"
    ```
 
 4. Press Enter three times.
 5. Open PowerShell as administrator and run; note the space before `-StartupType`:
 
-   ```powershell
+   ```
    Get-Service -Name ssh-agent | Set-Service -StartupType Automatic
    ```
 
 6. Press Enter and run:
 
-   ```powershell
+   ```
    Start-Service ssh-agent
    ```
 
 7. Return to Git Bash and run:
 
-   ```bash
+   ```
    eval "$(ssh-agent -s)"
    ```
 
 8. Then run:
 
-   ```bash
+   ```
    ssh-add ~/.ssh/id_ed25519
    ```
 
 9. On another computer, open `https://github.com/UtrechtUniversity/diy-studio-app`. Select `Settings > Deploy keys > Add deploy key` and enter this *Title*:
 
-   ```text
+   ```
    Presenter DIY-studio Bibliotheek USP
    ```
 
 10. Open `C:\Users\User\.ssh\id_ed25519.pub` in a text editor and copy its contents into the GitHub *Key* field. Leave `Allow write access` cleared.
 11. Finally, test from Git Bash:
 
-   ```bash
+   ```
    ssh -T git@github.com
    ```

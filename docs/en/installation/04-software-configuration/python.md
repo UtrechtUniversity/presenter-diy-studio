@@ -1,6 +1,6 @@
 - Sign in as **User**, not **Setup**. Install Python without administrator rights, using the default settings, in:
 
-  ```text
+  ```
   C:\Users\User\AppData\Local\Programs\Python\Python313
   ```
 
@@ -9,7 +9,7 @@
 - At the end, select `Disable path length limit` to remove the `MAX_PATH` limit.
 - Add these two directories to the system `PATH` variable:
 
-  ```text
+  ```
   C:\Users\User\AppData\Local\Programs\Python\Python313
   C:\Users\User\AppData\Local\Programs\Python\Python313\Scripts
   ```

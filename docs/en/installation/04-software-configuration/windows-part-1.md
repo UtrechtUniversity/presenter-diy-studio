@@ -9,7 +9,7 @@ Windows must have two user accounts:
 
 Disconnect the PC from the internet while configuring Windows. When prompted to connect to a network, press `Shift+F10` and run:
 
-```bat
+```
 OOBE\BYPASSNRO
 ```
 
@@ -25,7 +25,7 @@ Choose `"No"` for all other installation questions and `Required Only` for diagn
 - Press `Win + R`, enter `regedit` and start Registry Editor.
 - Change the following registry entry from `2` to `0`:
 
-  ```text
+  ```
   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\PasswordLess\Device\DevicePasswordLessBuildVersion
   ```
 
@@ -60,7 +60,7 @@ If this is unavailable, disable Windows Hello.
 
 Open `Settings > Network & internet > Ethernet` and select the lower port, `Ethernet 2`, not `soliscom.uu.nl`. Then open `IP assignment > Edit > Manual > IPv4` and use:
 
-```text
+```
 IP address: 192.168.10.221
 Subnet mask: 255.255.255.0
 ```

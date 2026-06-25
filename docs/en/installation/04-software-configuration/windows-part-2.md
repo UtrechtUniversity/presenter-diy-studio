@@ -25,7 +25,7 @@ A Local Group Policy prevents studio users from seeing the taskbar, File Explore
 
 Change the following settings under:
 
-```text
+```
 Console Root > Local Computer\User Policy\User Configuration\Administrative Templates\
 ```
 
@@ -35,7 +35,7 @@ Console Root > Local Computer\User Policy\User Configuration\Administrative Temp
 
   Under *Options > Interface file name*, enter:
 
-  ```text
+  ```
   C:\Software\DIY-studio-startup-script.bat
   ```
 
