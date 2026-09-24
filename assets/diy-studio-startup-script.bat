@@ -16,4 +16,4 @@ start "" "StreamDeck.exe"
 
 :: Start DIY Studio App Manager
 cd /d "C:\Software\diy-studio-app"
-start "" "python" "C:\Software\diy-studio-app-manager\app_manager.py"
+start "" "C:\Python\production_YYYY-MM_py3XXX\venv\Scripts\python.exe" "C:\Software\diy-studio-app-manager\app_manager.py"
