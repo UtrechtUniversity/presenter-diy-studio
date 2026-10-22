@@ -6,14 +6,14 @@ Git is a source-control system used to download and update the DIY Studio App. A
 2. Open Command Prompt by pressing the Windows key, typing `cmd` and pressing Enter. Run:
 
     ```
-    git config --global user.name "Arthur Verbeek"
-    git config --global user.email arthurverbeek88@gmail.com
+    git config --global user.name "FirstName LastName"
+    git config --global user.email name@email.com
     ```
 
 3. Open `Git Bash` and run:
 
     ```
-    ssh-keygen -t ed25519 -C "arthurverbeek88@gmail.com"
+    ssh-keygen -t ed25519 -C "name@email.com"
     ```
 
 4. Press Enter three times.

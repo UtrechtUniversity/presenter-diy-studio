@@ -1,5 +1,3 @@
-## Python
-
 - Controleer eerst welke Pythonversie je exact moet installeren [in de readme van de GitHub-repository](https://github.com/UtrechtUniversity/diy-studio-app)
 
 - Log in als **User** (niet **Setup**).

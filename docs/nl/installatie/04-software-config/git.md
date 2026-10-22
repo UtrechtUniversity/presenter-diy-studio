@@ -7,14 +7,14 @@ Git is een systeem voor het beheren van software. Hiermee kunnen we de DIY Studi
 2. Open een Command Prompt (Windowstoets, type `cmd`, druk op Enter) en voer uit:
 
     ```
-    git config --global user.name "Arthur Verbeek"
-    git config --global user.email arthurverbeek88@gmail.com
+    git config --global user.name "Voornaam Achternaam"
+    git config --global user.email name@email.com
     ```
 
 3. Open `Git Bash` en voer uit:
 
     ```
-    ssh-keygen -t ed25519 -C "arthurverbeek88@gmail.com"
+    ssh-keygen -t ed25519 -C "name@email.com"
     ```
 
 4. Druk driemaal op Enter.
