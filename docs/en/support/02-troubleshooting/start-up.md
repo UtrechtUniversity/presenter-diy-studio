@@ -54,7 +54,7 @@ Drag Firefox to the correct display. Use `Ctrl+comma` to allow the mouse to move
 1. Sign in as administrator.
 2. Start OBS.
 3. Right-click the **Program Monitor**.
-4. Select **Open Project Projector > HP**.
+4. Select **Open Program Projector > HP**.
 5. Restart the PC.
 
 ### The DIY Studio App starts on the wrong display

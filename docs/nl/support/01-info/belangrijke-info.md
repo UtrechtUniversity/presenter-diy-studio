@@ -23,7 +23,8 @@ In de DIY Studio App kun je de volgende functies gebruiken:
 - `F5`: hiermee verschijnt een knop op de videotypekeuzepagina waarmee kan worden opgenomen met de greenscreen in beeld
 - `F12`: hiermee wordt OBS afgesloten en opnieuw opgestart
 
-Daarnaast kan er bruikbare informatie over de werking van de applicatie staan in het consolevenster dat te zien is door de gebruikersinterface af te sluiten met `Alt+F4`. Indien het venster geminimaliseerd is, klik er dan met de rechtermuisknop op en kies **Restore**.
+Daarnaast kan er bruikbare informatie over de werking van de applicatie staan in het consolevenster. Deze wordt standaard
+geminimaliseerd op de linkermonitor, linksonderin. Klik er met de rechtermuisknop op en kies **Restore**.
 
 Om de app hierna opnieuw op te kunnen starten moet je dit consolevenster sluiten. Open een nieuw venster door `Ctrl+Shift+Esc` in te drukken en in de Task Manager voor **Run new task** te kiezen. Type `cmd` en druk op Enter. Type daarna:
 
@@ -59,3 +60,9 @@ python encryption.py
 
 - Kies optie 1 voor het aanmaken van een keypair.
 - Kies optie 2 voor het ontsleutelen van bestanden.
+
+## Routing van videosignaal
+
+OBS draait in studio modus en heeft daarmee twee monitors: de Preview en Program monitor. Als de gebruiker kiest voor een opname met achtergrond naar keuze, dan wordt in de Program Monitor de scene 'Record-StaticBG' geladen. De scene die hoort bij de gekozen achtergrond wordt ingesteld als Preview. OBS stuurt het beeld van de Preview Monitor naar de output van de Blackmagic Decklink in de PC. Dit signaal gaat vervolgens naar de Background van de Blackmagic Ultimatte. In de Ultimatte worden camerabeeld en achtergrond samengevoegd, waarbij het groen wordt weggehaald. Dit beeld gaat weer naar de input van de Decklink, en dit wordt gebruikt voor de opname, inclusief geluid.
+
+Als de gebruiker kiest voor een PowerPointopname, dan wordt dit proces overgeslagen. De Ultimatte krijgt de opdracht om het camerabeeld met het groen er nog in uit te sturen: de camerafeed wordt daarmee één op één doorgestuurd naar de input van de Decklink. In de Program Monitor van OBS wordt de scene 'Record-PP' geladen, en op de Decklink Source worden vervolgens drie filters aangezet: ChromaKey, Crop en ColorCorrection. Oftewel: de greenscreen key wordt nu door OBS gedaan. OBS zet er vervolgens het beeld van de teleprompter achter (oftewel, de slide show van PowerPoint).

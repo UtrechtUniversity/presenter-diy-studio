@@ -23,7 +23,7 @@ The following functions are available in the DIY Studio App:
 - `F5`: adds a button to the video-type selection page for recording with the green screen visible
 - `F12`: closes and restarts OBS
 
-The console window may also contain useful diagnostic information. Close the user interface with `Alt+F4` to view it. If the window is minimised, right-click it and select **Restore**.
+The console window may also contain useful diagnostic information. By default this is minimized on the left screen, bottom left corner. Right-click it and select **Restore**.
 
 To restart the application, first close this console window. Press `Ctrl+Shift+Esc`, select **Run new task** in Task Manager, enter `cmd` and press Enter. Then run:
 
@@ -59,3 +59,9 @@ Use the command-line interface to create key pairs and decrypt files:
 
 - Select option 1 to create a key pair.
 - Select option 2 to decrypt files.
+
+## Video signal routing
+
+OBS runs in Studio Mode, which provides two monitors: Preview and Program. If the user chooses to record with a background of their choice, the ‘Record-StaticBG’ scene is loaded in the Program monitor. The scene corresponding to the selected background is set as the Preview. OBS sends the image from the Preview monitor to the output of the Blackmagic DeckLink in the PC. This signal then goes to the Background input of the Blackmagic Ultimatte. In the Ultimatte, the camera image and background are combined, with the green screen removed. This image is then sent back to the DeckLink input and used for the recording, including audio.
+
+If the user chooses to record a PowerPoint presentation, this process is bypassed. The Ultimatte is instructed to output the camera image with the green screen still in place; the camera feed is therefore passed through directly to the DeckLink input. The ‘Record-PP’ scene is loaded in OBS’s Program monitor, and three filters are then enabled on the DeckLink Source: Chroma Key, Crop and Colour Correction. In other words, OBS now handles the green-screen keying. OBS then places the teleprompter image behind it (that is, the PowerPoint slide show).

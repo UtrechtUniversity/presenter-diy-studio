@@ -57,7 +57,7 @@ Sleep Firefox handmatig naar het juiste scherm. Gebruik `Ctrl+komma` om de muis 
 1. Log in als administrator.
 2. Start OBS.
 3. Klik met de rechtermuisknop op de **Program Monitor**.
-4. Kies **Open Project Projector > HP**.
+4. Kies **Open Program Projector > HP**.
 5. Start hierna de PC opnieuw op.
 
 ### De DIY Studio App start op het verkeerde scherm
