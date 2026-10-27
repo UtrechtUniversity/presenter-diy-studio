@@ -8,6 +8,8 @@ Firefox always runs behind the DIY Studio App window. It is used to sign in to M
   - Enter `disableResetPrompt`, click the plus icon to add it and ensure `boolean` is selected.
   - Find `browser.link.open_newwindow.restriction` and double-click it to change the value to `0`.
   - Find `browser.link.open_newwindow` and double-click it to change the value to `1`.
+  - Find `browser.sessionstore.resume_from_crash` and double-click it to change the value to `false`.
+  - Find `toolkit.startup.max_resumed_crashes` and double-click it to change the value to `-1`.
 - Then:
   - Open the hamburger menu at the top right.
   - Select *Settings*.
