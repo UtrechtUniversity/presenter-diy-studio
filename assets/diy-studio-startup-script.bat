@@ -12,7 +12,7 @@ start "" "DMT.exe"
 
 :: Start Stream Deck
 cd /d "C:\Program Files\Elgato\StreamDeck\"
-start "" "StreamDeck.exe"
+start "" "StreamDeck.exe" --runinbk
 
 :: Start DIY Studio App Manager
 cd /d "C:\Software\diy-studio-app"
