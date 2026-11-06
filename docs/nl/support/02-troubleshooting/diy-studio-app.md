@@ -32,9 +32,9 @@ Deze foutmelding is op dit moment niet in gebruik.
 
 Controleer of de rode UTP-kabel in de bovenste Ethernetpoort op de PC zit, en zo ja, of het andere uiteinde is aangesloten op de Blackmagic Ultimatte.
 
-### 105 — Kan niet verbinden met Stream Deck
+### 105 — Kan niet verbinden met bedieningspaneel
 
-**EN:** Can't connect to Ultimatte
+**EN:** Can't connect to control panel
 
 Controleer of de Stream Deck goed is aangesloten via USB (deze kabel gaat naar de Dell monitor). Controleer dan of de juiste knoppen te zien zijn op de Stream Deck (zie hieronder, bij **Het bedieningspaneel werkt niet**). Is dat niet het geval, dan is ofwel de Stream Deck software niet gestart, of de juiste plugin is niet geladen. Neem contact op met Content & Digital als dit het geval is.
 

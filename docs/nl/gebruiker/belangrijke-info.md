@@ -21,16 +21,33 @@
   OneDrive worden geüpload. Voor tweestaps-authenticatie (2FA) worden
   Yubikeys niet ondersteund.
 
-- De teleprompter werkt enkel met PowerPoint-bestanden met extensies
+- Het systeem werkt enkel met PowerPoint-bestanden met extensies
   pptx, ppt of odp.
 
-- Als de PowerPointpresentatie alleen wordt gebruikt om tekst van op te
-  lezen dan raden we aan om witte tekst op een zwarte achtergrond te
-  gebruiken.
+- Als een PowerPointpresentatie wordt gebruikt als spiekbriefje voor
+  de presentatietekst, dan raden we aan om witte tekst op een zwarte
+  achtergrond te gebruiken.
 
-- Hou er rekening mee dat wanneer je een video met PowerPointpresentatie
-  op de achtergrond wil maken, er rechtsonder in de hoek van de
-  presentatie geen content staat. Hier kom jij namelijk zelf in beeld.
+- Wanneer je een PowerPointvideo wil maken, hou er dan rekening mee dat
+  er rechtsonder in de hoek van de presentatie geen informatie staat.
+  Hier kom jij namelijk zelf in beeld. Wil je liever ergens anders in
+  beeld? Je kunt per slide bepalen of je rechtsonder, linksonder,
+  onderaan in het midden, of helemaal niet in beeld komt. Dit kun je van
+  tevoren doen in je PowerPointbestand. Zorg ervoor dat het
+  Notitievenster is geactiveerd (tabblad *Beeld*, dan *Notities*; in het
+  Engels: *View*, dan *Notes*). Je kunt dan in het notitievak met hashtags
+  aangeven waar je in beeld wil komen. Bij slides zonder hashtag blijft
+  de positie ongewijzigd ten opzichte van de vorige slide. Let op: je
+  kunt nog steeds je eigen notities toevoegen, maar **zorg ervoor dat
+  deze hashtags helemaal aan het eind staan**. De volgende tags worden
+  ondersteund:
+  - #links
+  
+  - #midden
+  
+  - #rechts
+  
+  - #uit
 
 - USB-sticks zijn niet te gebruiken, alle bestanden gaan heen en weer
   via OneDrive.

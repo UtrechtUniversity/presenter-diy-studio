@@ -1,11 +1,11 @@
 - Privacy notice:
-
-    * Backups of recordings are generally retained for seven days.
-      Backups are encrypted. Other users will not be able to view your
-      recordings.
-
-    * The app anonymously collects some usage statistics. No personal data
-      is stored.
+  
+  * Backups of recordings are generally retained for seven days.
+    Backups are encrypted. Other users will not be able to view your
+    recordings.
+  
+  * The app anonymously collects some usage statistics. No personal data
+    is stored.
 
 - Due to the greenscreen, it’s important not to wear clothing that is
   green or contains green elements or details.
@@ -21,16 +21,31 @@
   OneDrive. YubiKeys for two-factor authentication (2FA) are not
   currently supported.
 
-- The teleprompter only works with PowerPoint files with the extensions
+- The system only works with PowerPoint files with the extensions
   `.pptx`, `.ppt` or `.odp`.
 
 - If the PowerPoint presentation is used solely for reading text, we
   recommend using white text on a black background.
 
-- Please note that if you want to record a video with your PowerPoint
-  presentation in the background, make sure there is no content in the
-  lower-right corner of your slides — that’s where you will appear on
-  screen.
+- When creating a PowerPoint video, make sure there’s no information in
+  the bottom-right corner of the slides, as this is where you’ll appear
+  on screen. Would you rather appear somewhere else? You can choose for
+  each slide whether to appear in the bottom-right, bottom-left or
+  bottom-centre, or not at all. You can set this in advance in your
+  PowerPoint file. Make sure the Notes Panel is enabled (*View* tab, then
+  *Notes*). You can use hashtags in the notes box to choose where you
+  appear on screen. Slides without a hashtag will keep the same position
+  as the previous slide. Important: you can still add your own notes,
+  but **make sure these hashtags are right at the end**.
+  The following hashtags are supported:
+  
+  - #left
+  
+  - #center
+  
+  - #right
+  
+  - #off
 
 - USB drives cannot be used; all files must be transferred via OneDrive.
 

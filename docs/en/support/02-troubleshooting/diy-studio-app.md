@@ -24,7 +24,7 @@ This error is not currently in use.
 
 Check that the red UTP cable is connected to the upper Ethernet port on the PC and that its other end is connected to the Blackmagic Ultimatte.
 
-### 105 — Can't connect to Stream Deck
+### 105 — Can't connect to control panel
 
 Check that the Stream Deck is connected correctly over USB; this cable runs to the Dell monitor. Then check whether the correct buttons are visible on the Stream Deck; see **The control panel does not work**. If they are not, either the Stream Deck software has not started or the correct plugin has not loaded. Contact Content & Digital.
 
