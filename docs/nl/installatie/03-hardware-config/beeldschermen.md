@@ -2,14 +2,14 @@
 
 Alle beeldschermen draaien op een resolutie van 1920x1080.
 
-1 = Projectors van OBS + Presenter View van PowerPoint. Dit scherm is in
-Windows ingesteld als hoofdscherm, zodat de Presenter View hier automatisch
-op wordt weergegeven.
+1 = Weergave van DIY Studio App + Firefox. Alléén op dit scherm kan de
+gebruiker iets doen - de muis zal hier (standaard) niet vanaf kunnen gaan.
 
 Aangesloten op de PC met een DisplayPort-kabel.
 
-2 = Weergave van DIY Studio App + Firefox. Alléén op dit scherm kan de
-gebruiker iets doen - de muis zal hier (standaard) niet vanaf kunnen gaan.
+2 = Projectors van OBS + Presenter View van PowerPoint. Dit scherm is in
+Windows ingesteld als hoofdscherm, zodat de Presenter View hier automatisch
+op wordt weergegeven.
 
 Aangesloten op de PC met een DisplayPort-kabel.
 

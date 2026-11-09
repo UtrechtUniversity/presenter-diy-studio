@@ -2,11 +2,11 @@
 
 All displays use a resolution of 1920×1080.
 
-**1 — OBS projectors and PowerPoint Presenter View.** This display is configured as the main display in Windows so that Presenter View appears here automatically.
+**1 — DIY Studio App and Firefox.** This is the only display the user can interact with. By default, the mouse pointer cannot leave it.
 
 Connect it to the PC with a DisplayPort cable.
 
-**2 — DIY Studio App and Firefox.** This is the only display the user can interact with. By default, the mouse pointer cannot leave it.
+**2 — OBS projectors and PowerPoint Presenter View.** This display is configured as the main display in Windows so that Presenter View appears here automatically.
 
 Connect it to the PC with a DisplayPort cable.
 
