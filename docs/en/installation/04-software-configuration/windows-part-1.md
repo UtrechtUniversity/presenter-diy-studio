@@ -92,3 +92,8 @@ Ensure the microphone icon beside *Volume* is not crossed out, which indicates t
 2. Open *Additional settings* and clear all options.
 
    ![Screenshot: Additional settings](../../media/windows-notifications-3.png)
+
+## Step 7: enable Windows Long Paths
+1. While logged in as administrator, press `Windowskey + R`, type regedit and press enter.
+2. Navigate to `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem`
+3. Double click `LongPathsEnabled` (Type: `REG_DWORD`) and set its value to `1`.

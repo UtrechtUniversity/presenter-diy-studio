@@ -18,7 +18,7 @@ OBS dient altijd te draaien in **Portable Mode**. Dit zorgt ervoor dat alle inst
 
 - Activeer **Studio Mode** rechtsonder bij **Controls**.
 
-- Controleer of `Transition Type` (het dropdownmenu onder *Quick Transitions*) op `Cut` staat en niet op `Fade`.
+- Controleer of `Transition Type` (de dropdownmenu's onder *Quick Transitions*) op `Cut` staan en niet op `Fade`.
 
 - Bij het menu met de drie stippen rechts van *Transition* dienen alle opties uitgevinkt te zijn.
 
@@ -45,6 +45,8 @@ De volgende settings horen er ook zo uit te zien:
   - Klik op `Start`.
 
 ![Screenshot: OBS Decklink settings](../../media/obs-decklink-output.png)
+
+- Selecteer bij `Scenes` `Ultimatte-BG-PowerPoint`, selecteer bij `Sources` `Display Capture`, en selecteer bij `Display` het scherm waarop de PowerPointpresentatie te zien is.
 
 - *(Wellicht niet nodig)* Ga tot slot naar `C:\Users\User\AppData\Roaming\obs-studio`, klik met de rechtermuisknop op de map `.sentinel`, kies *Properties* en ga naar het tabblad *Security*. Klik op *Edit*, *Add*, type `Everyone`, en zet een vinkje bij `Deny: Write`. Als deze map niet bestaat, maak deze dan eerst aan.
 

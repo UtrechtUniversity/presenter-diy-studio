@@ -12,14 +12,14 @@ Allereerst moet de afdeling ITS de DIY Studio App registreren in Azure Portal en
   Voor gedetailleerdere instructies, zie: [Register an application with the Microsoft identity platform - Microsoft Graph | Microsoft Learn](https://learn.microsoft.com/en-us/graph/auth-register-app-v2)
 
 ## Installatie
-1. Zorg ervoor dat op de PC waarop deze app draait de fonts **Open Sans** en **Merriweather** (beide in alle varianten) geïnstalleerd zijn. Rechtermuisknop > *Install*.
+1. Zorg ervoor dat op de PC waarop deze app draait de fonts **Open Sans** en **Merriweather** (beide in alle varianten) geïnstalleerd zijn. Rechtermuisknop > `Show more options` > `Install for all users`.
 
 2. Open Windows PowerShell (druk op de Windowstoets, typ 'powershell' en klik de juiste app aan) en voer het volgende uit om de app vanuit GitHub te downloaden:
   
     ```
     cd C:\Software
     
-    git clone git@github.com:UtrechtUniversity/diy-studio-app.git
+    git clone https://github.com/UtrechtUniversity/diy-studio-app.git
     ```
 
 3. Maak een virtuele Python-omgeving (venv) waarin alle third party libraries die de app gebruikt worden geïnstalleerd. Maak eerst een directory aan voor deze venv, waarbij je 2026-09 vervangt door het huidige jaar en de huidige maand, en py3147 door de exacte Pythonversie die is geïnstalleerd (in dit geval: 3.14.7).
@@ -62,7 +62,7 @@ Allereerst moet de afdeling ITS de DIY Studio App registreren in Azure Portal en
 8. Run de post-installer van pywin32:
 
     ```
-    $venvPy pywin32_postinstall.py -install
+    & $venvPy C:\Python\production_2026-09_py3147\venv\Scripts\pywin32_postinstall.py -install
     ```
 
 9. Sla de Pythonversie en lijst met geïnstalleerde packages op:
@@ -71,7 +71,7 @@ Allereerst moet de afdeling ITS de DIY Studio App registreren in Azure Portal en
     & $venvPy --version > C:\Python\production_2026-09_py3147\python-version.txt
     
     & $venvPy -m pip freeze --all `
-    > C:\Python\production_2026-09_py3147\requirements-actual.txt
+    > C:\Python\production_2026-09_py3147\requirements-installed.txt
     ```
 
 10. Pas `C:\Software\diy-studio-startup-script.bat aan`, door op de laatste regel de juiste locatie van Python in de virtuele omgeving in te vullen:
@@ -85,11 +85,11 @@ Allereerst moet de afdeling ITS de DIY Studio App registreren in Azure Portal en
     ```
     Settings\DIY Studio App - USP Bibliotheek\config.cfg
     ```
-  
-naar:
-  
+    
+    naar:
+    
     ```
     C:\Software\diy-studio-app\config\
     ```
-  
+
 Open het bestand met Notepad en controleer of de juiste gegevens staan ingevuld bij client_id en tenant_id onder het kopje [azure].

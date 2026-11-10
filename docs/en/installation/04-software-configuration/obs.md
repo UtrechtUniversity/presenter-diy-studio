@@ -13,7 +13,7 @@ OBS must always run in **Portable Mode**. This stores all OBS settings, profiles
 - Select `Profile > Import` from the top menu and import the latest profile from the DIY Studio Software Package. Then select it from the *Profile* menu.
 - Select `Scene Collection > Import` and import the latest scene collection from the package. Then select it from the *Scene Collection* menu. If asked whether OBS should automatically search for collections, select `"No"`. Relink the required files in `C:\Software\obs-assets\`.
 - Enable **Studio Mode** under **Controls** at the bottom right.
-- Ensure `Transition Type`, below *Quick Transitions*, is set to `Cut`, not `Fade`.
+- Ensure `Transition Types`, below *Quick Transitions*, are all set to `Cut`, not `Fade`.
 - Clear every option in the three-dot menu to the right of *Transition*.
 - Under `File > Settings`:
   - *General*: clear `Automatically check for updates on startup`.
@@ -33,6 +33,8 @@ The remaining settings should match this screenshot:
   - Click `Start`.
 
 ![Screenshot: OBS DeckLink settings](../../media/obs-decklink-output.png)
+
+- Under `Scenes`, select `Ultimatte-BG-PowerPoint`. Then under `Sources`, select `Display Capture`, and under `Display` choose the screen that shows the PowerPoint presentation.
 
 - *(Possibly unnecessary)* Open `C:\Users\User\AppData\Roaming\obs-studio`, right-click `.sentinel`, select *Properties* and open *Security*. Click *Edit*, *Add*, enter `Everyone` and select `Deny: Write`. If the folder does not exist, create it first.
 

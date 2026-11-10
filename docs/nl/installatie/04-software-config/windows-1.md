@@ -102,3 +102,8 @@ Let op dat er geen schuine streep door het microfoon-icoon staat bij *Volume*. D
 2. Ga naar *Additional settings* en vink alle opties uit.
 
 ![Screenshot: Additional settings](../../media/windows-notifications-3.png)
+
+## Step 7: zet Windows Long Paths aan
+1. Log in als administrator, druk op `Windowstoets + R`, type `regedit` en druk op enter.
+2. Ga naar HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem
+3. Dubbelklik op `LongPathsEnabled` (Type: `REG_DWORD`) en zet de waarde op `1`.

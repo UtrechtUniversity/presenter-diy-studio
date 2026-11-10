@@ -2,7 +2,8 @@ Firefox draait altijd achter het venster van de DIY Studio App en wordt gebruikt
 
 - Log in als **User**. Start de installatie van Firefox. Wanneer er gevraagd wordt om het administratorwachtwoord in te vullen klik je op `"No"`.
 - Start Firefox en kies ervoor om deze als default browser in te stellen (belangrijk!). Het Settings-scherm van Windows opent. Klik bij `Make Firefox your default browser` op `Set default`.
-- Pas de volgende settings aan:
+- Sleep het Firefox-venster naar de monitor waarop straks ook de DIY Studio App draait (de rechtermonitor).
+- Pas de volgende settings aan (en bevestig na het intypen van een waarde met `Enter`):
   - Type `about:config` in de Firefox address bar.
   - Accepteer de beveiligingswaarschuwing.
   - Type `disableResetPrompt` en klik op het +-icoon om deze toe te voegen. Zorg dat "boolean" is geselecteerd.
@@ -14,9 +15,9 @@ Firefox draait altijd achter het venster van de DIY Studio App en wordt gebruikt
   - Klik op het hamburgermenu (rechtsboven onder de sluitknop).
   - Kies *Settings*.
   - Onder *General*: klik op `Make default` en daarna in het Windows Settings-scherm op `Set default`, mocht je dit nog niet gedaan hebben.
-  - Ga naar `Privacy & Security`.
-  - Scroll naar *Passwords* en vink `Ask to save passwords` uit.
-  - Scroll naar *History* en kies `Firefox will: Never remember history`.
+  - Ga naar `Home and startup`, onder *Startup*, vink `Open Firefox automatically when your computer starts up` *uit*.
+  - Ga naar `Privacy and security`, scroll naar *History* en kies `Firefox will: Never remember history`.
+  - Ga naar `Passwords and autofill`, scroll naar *Passwords* en vink `Ask to save passwords` *uit*.
   - Herstart Firefox.
   - Klik daarna met de rechtermuisknop op de bookmarks toolbar en kies `Bookmarks Toolbar > Never Show`.
 
